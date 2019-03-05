@@ -2,17 +2,21 @@
 <div>
       
         <home-header></home-header>
-         <router-link to="/company">HOME !</router-link> 
+        <home-swiper></home-swiper>
+      
 </div>
 </template>
 
 
 <script>
 import HomeHeader from './components/Header'
+import HomeSwiper from './components/Swiper'
+
 export default {
  name:"home",
  components:{
-         HomeHeader
+         HomeHeader,
+         HomeSwiper
  }
 }
 </script>
