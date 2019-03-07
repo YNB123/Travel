@@ -12,10 +12,10 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
       '/api': {
-        target: 'http://127.0.0.1:8888', //设置调用接口域名和端口号别忘了加http
+        target: 'http://127.0.0.1:8082', //设置调用接口域名和端口号别忘了加http
         changeOrigin: true,
         pathRewrite: {
-          '^/': '/'
+          '^/api': '/static/moke'
         }
       }
     },

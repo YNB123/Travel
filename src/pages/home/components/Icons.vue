@@ -6,7 +6,7 @@
     :key ="item.id"
     >
       <div class='icon-image'>
-          <img  style="height:100%;display:block;margin:0 auto;" :src="item.imgurl"/> 
+          <img  style="height:100%;display:block;margin:0 auto;" :src="item.imgUrl"/> 
       </div>
       <p class="icon-desc">{{item.desc}}</p>
   </div>
@@ -18,50 +18,8 @@
 export default {
  
     name: "HomeIcons",
-    data (){ 
-        return{
-        iconsList :[{
-            id:'0001',
-            imgurl:'static/icons/ic1.png',
-            desc:'景点门票'
-        },{
-            id:'0002',
-            imgurl:'static/icons/ic2.png',
-            desc:'一日游'
-        },{
-            id:'0003',
-            imgurl:'static/icons/ic3.png',
-            desc:'合肥必读'
-        },{
-            id:'0004',
-            imgurl:'static/icons/ic4.png',
-            desc:'游乐园'
-        },{
-            id:'0005',
-            imgurl:'static/icons/ic5.png',
-            desc:'动植物园'
-        },{
-            id:'0006',
-            imgurl:'static/icons/ic6.png',
-            desc:'组团观园'
-        },{
-            id:'0007',
-            imgurl:'static/icons/ic7.png',
-            desc:'海豚馆'
-        },{
-            id:'0008',
-            imgurl:'static/icons/ic8.png',
-            desc:'自然风光'
-        },{
-            id:'0009',
-            imgurl:'static/icons/ic1.png',
-            desc:'海上乐园'
-        },{
-            id:'0010',
-            imgurl:'static/icons/ic2.png',
-            desc:'海底世界'
-        }]
-        }
+    props:{       
+        iconsList:Array
     },
     computed:{
         pages (){

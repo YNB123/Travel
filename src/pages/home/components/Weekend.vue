@@ -23,31 +23,8 @@
 <script>
 export default {
     name:"HomeWeekend",
-    data () {
-        return {
-        weekendList:[{
-                    id:"0001",
-                    imgUrl:"static/icons/week1.jpg",
-                    title:"大连圣亚海洋世界圣亚海洋世界圣亚海洋世界",
-                    desc:"浪漫大连首站，浪漫的海"
-                },{
-                    id:"0002",
-                    imgUrl:"static/icons/week2.jpg",
-                    title:"大连圣亚海洋世界圣亚海洋世界圣亚海洋世界",
-                    desc:"浪漫大连首站，浪漫的海"
-                },{
-                    id:"0003",
-                    imgUrl:"static/icons/week3.jpg",
-                    title:"大连圣亚海洋世界圣亚海洋世界圣亚海洋世界",
-                    desc:"浪漫大连首站，浪漫的海"
-                },{
-                    id:"0004",
-                    imgUrl:"static/icons/week4.jpg",
-                    title:"大连圣亚海洋世界圣亚海洋世界圣亚海洋世界",
-                    desc:"浪漫大连首站，浪漫的海"
-                }]
-        }
-       
+    props:{
+     weekendList:Array   
     }
 }
 </script>

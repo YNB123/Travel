@@ -19,31 +19,8 @@
 <script>
 export default {
     name:"HomeRecommend",
-    data () {
-        return {
-        recommendList:[{
-                    id:"0001",
-                    imgUrl:"static/icons/rec.jpg",
-                    title:"大连圣亚海洋世界圣亚海洋世界圣亚海洋世界",
-                    desc:"浪漫大连首站，浪漫的海"
-                },{
-                    id:"0002",
-                    imgUrl:"static/icons/rec1.jpg",
-                    title:"大连圣亚海洋世界圣亚海洋世界圣亚海洋世界",
-                    desc:"浪漫大连首站，浪漫的海"
-                },{
-                    id:"0003",
-                    imgUrl:"static/icons/rec.jpg",
-                    title:"大连圣亚海洋世界圣亚海洋世界圣亚海洋世界",
-                    desc:"浪漫大连首站，浪漫的海"
-                },{
-                    id:"0004",
-                    imgUrl:"static/icons/rec1.jpg",
-                    title:"大连圣亚海洋世界圣亚海洋世界圣亚海洋世界",
-                    desc:"浪漫大连首站，浪漫的海"
-                }]
-        }
-       
+    props:{
+        recommendList:Array
     }
 }
 </script>
